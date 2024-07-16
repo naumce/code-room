@@ -38,7 +38,6 @@ export async function createRoom(
   roomData: Omit<Room, "id" | "userId">,
   userId: string
 ) {
-  console.log("userId", userId)
   const inserted = await db
     .insert(room)
     .values({ ...roomData, userId })
