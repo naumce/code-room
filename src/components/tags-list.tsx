@@ -1,5 +1,6 @@
 import { Badge } from "lucide-react"
 export function splitTags(tags: string) {
+  console.log(tags)
   return tags.split(",").map((lang: any) => lang.trim())
 }
 export function TagsList({ tags }: { tags: string[] }) {
