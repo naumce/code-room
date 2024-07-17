@@ -1,6 +1,7 @@
 "use server"
 
 import { getSession } from "@/src/lib/auth"
+import { StreamChat } from "stream-chat"
 
 export async function generateTokenAction() {
   const session = await getSession()
